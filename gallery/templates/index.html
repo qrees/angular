@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+</head>
+<body ng-app>
+{% verbatim %}
+    <div ng-controller="AlbumListCtrl">
+
+    <ul>
+        <li ng-repeat="item in list">
+            {{item.name}}
+        </li>
+    </ul>
+    </div>
+{% endverbatim %}
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.js"></script>
+<script src="{{ STATIC_URL }}js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+--index-url http://c.pypi.python.org/simple
+Django<1.6.0
+djangorestframework
+south
