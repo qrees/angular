@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" ng-app="GalleryApp">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -7,18 +7,16 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
 </head>
-<body ng-app>
+<body>
 {% verbatim %}
-    <div ng-controller="AlbumListCtrl">
-
-    <ul>
-        <li ng-repeat="item in list">
-            {{item.name}}
-        </li>
-    </ul>
-    </div>
+    <div ng-view></div>
 {% endverbatim %}
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.js"></script>
 <script src="{{ STATIC_URL }}js/main.js"></script>
+<script src="{{ STATIC_URL }}js/controllers.js"></script>
+<script src="{{ STATIC_URL }}js/directives.js"></script>
+<script src="{{ STATIC_URL }}js/filters.js"></script>
+<script src="{{ STATIC_URL }}js/services.js"></script>
+<script src="{{ STATIC_URL }}js/app.js"></script>
 </body>
 </html>
